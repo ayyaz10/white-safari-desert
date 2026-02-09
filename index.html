@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desert Dream Booker - Premium Desert Safari Experiences</title>
+    <title>Explore White Desert - Premium Desert Safari Experiences</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
@@ -113,6 +113,54 @@
       }
     </style>
   </head>
+  <a
+    href="https://wa.me/923001234567"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform z-50"
+  >
+    <!-- <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg> -->
+    <?xml version="1.0" encoding="utf-8"?>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="WhatsApp"
+      role="img"
+      viewBox="0 0 512 512"
+      class="w-[36px]"
+    >
+      <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
+      <path
+        fill="#25d366"
+        stroke="#ffffff"
+        stroke-width="26"
+        d="M123 393l14-65a138 138 0 1150 47z"
+      />
+      <path
+        fill="#ffffff"
+        d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+        `
+      />
+    </svg>
+  </a>
+
   <body class="font-sans text-gray-800 bg-sand-50 antialiased">
     <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
@@ -129,7 +177,7 @@
               />
             </svg>
             <span class="logo-text text-2xl font-bold text-white tracking-wide"
-              >Desert Dream Booker</span
+              >Explore White Desert</span
             >
           </div>
 
@@ -161,7 +209,7 @@
             >
             <a
               href="#book"
-              class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
+              class="bg-[#25D366] hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
               >Book Now</a
             >
           </div>
@@ -224,17 +272,28 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video Background -->
     <section
       class="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      <!-- Background Image -->
+      <!-- Video Background -->
       <div class="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1920&q=80"
-          alt="Desert Sunset"
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
           class="w-full h-full object-cover"
-        />
+          poster="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1920&q=80"
+        >
+          <source src="./assets/whitedesert-hero.mp4" type="video/mp4" />
+          <!-- Fallback image if video doesn't load -->
+          <img
+            src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1920&q=80"
+            alt="Desert"
+            class="w-full h-full object-cover"
+          />
+        </video>
         <div class="absolute inset-0 hero-gradient"></div>
       </div>
 
@@ -278,9 +337,9 @@
           </a>
           <a
             href="#book"
-            class="glass-effect text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:bg-white/20 flex items-center gap-2"
+            class="glass-effect bg-[#25D366] text-white px-8 py-3 rounded-full font-bold text-lg transition-all hover:bg-white/20 flex items-center gap-2"
           >
-            <svg
+            <!-- <svg
               class="w-5 h-5"
               fill="none"
               stroke="currentColor"
@@ -298,13 +357,34 @@
                 stroke-width="2"
                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
+            </svg> -->
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="WhatsApp"
+              role="img"
+              viewBox="0 0 512 512"
+              class="w-[36px]"
+            >
+              <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
+              <path
+                fill="#25d366"
+                stroke="#ffffff"
+                stroke-width="26"
+                d="M123 393l14-65a138 138 0 1150 47z"
+              />
+              <path
+                fill="#ffffff"
+                d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+                `
+              />
             </svg>
-            Watch Video
+            Book Now
           </a>
         </div>
 
         <!-- Stats -->
-        <div
+        <!-- <div`
           class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in-up"
           style="animation-delay: 0.4s"
         >
@@ -324,6 +404,34 @@
             <div class="text-3xl font-bold text-white mb-1">100%</div>
             <div class="text-gray-300 text-sm uppercase tracking-wider">
               Free Cancellation
+            </div>
+          </div>
+        </div> -->
+        <div
+          class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in-up"
+          style="animation-delay: 0.4s"
+        >
+          <!-- Stat 1 -->
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white mb-1">Expert</div>
+            <div class="text-gray-300 text-sm uppercase tracking-wider">
+              Local Guides
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="text-center border-l-0 md:border-l border-white/20">
+            <div class="text-3xl font-bold text-white mb-1">100%</div>
+            <div class="text-gray-300 text-sm uppercase tracking-wider">
+              Personalized Tours
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="text-center border-l-0 md:border-l border-white/20">
+            <div class="text-3xl font-bold text-white mb-1">Free</div>
+            <div class="text-gray-300 text-sm uppercase tracking-wider">
+              Cancellation
             </div>
           </div>
         </div>
@@ -348,7 +456,6 @@
         </svg>
       </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="py-20 md:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -364,9 +471,9 @@
               Your Gateway to Unforgettable Desert Adventures
             </h2>
             <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-              Since 2010, we've been crafting extraordinary desert experiences
-              that blend adventure, culture, and luxury. Our expert guides and
-              premium services ensure every journey becomes a cherished memory.
+              We craft extraordinary desert experiences that blend adventure,
+              culture, and luxury. Our expert guides and premium services ensure
+              every journey becomes a cherished memory.
             </p>
             <p class="text-gray-600 text-lg mb-8 leading-relaxed">
               From thrilling dune bashing to serene sunset camps, we offer a
@@ -375,7 +482,7 @@
               retreats, we have the perfect adventure waiting for you.
             </p>
 
-            <div class="flex items-center gap-4">
+            <!-- <div class="flex items-center gap-4">
               <div class="flex -space-x-4">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
@@ -399,7 +506,7 @@
                 </div>
                 <div class="text-gray-500">15+ years experience</div>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="relative reveal">
@@ -407,12 +514,12 @@
               class="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl opacity-20 blur-2xl"
             ></div>
             <img
-              src="https://images.unsplash.com/photo-1547234935-80c7142ee969?auto=format&fit=crop&w=800&q=80"
+              src="./assets/about-us.jpg"
               alt="Desert Experience"
               class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]"
             />
 
-            <div
+            <!-- <div
               class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs"
             >
               <div class="flex items-center gap-3 mb-2">
@@ -422,7 +529,7 @@
               <p class="text-gray-600 text-sm">
                 "Best desert safari experience in Dubai! Highly recommended."
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -652,14 +759,14 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Morning Safari -->
           <div
             class="bg-sand-50 rounded-2xl overflow-hidden border border-sand-200 card-hover reveal"
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=600&q=80"
+                src="./assets/morning-safari.jpg"
                 alt="Morning Safari"
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
@@ -761,7 +868,7 @@
                 </div>
                 <button
                   onclick="selectPackage('morning')"
-                  class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+                  class="bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
                 >
                   Book Now
                 </button>
@@ -781,7 +888,7 @@
             </div>
             <div class="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1547234935-80c7142ee969?auto=format&fit=crop&w=600&q=80"
+                src="./assets/evening-package.jpg"
                 alt="Evening Safari"
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
@@ -898,7 +1005,7 @@
           >
             <div class="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=600&q=80"
+                src="./assets/overnight-safari.jpg"
                 alt="Overnight Safari"
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
@@ -1000,7 +1107,7 @@
                 </div>
                 <button
                   onclick="selectPackage('overnight')"
-                  class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+                  class="bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
                 >
                   Book Now
                 </button>
@@ -1009,7 +1116,7 @@
           </div>
 
           <!-- VIP Experience -->
-          <div
+          <!-- <div
             class="bg-sand-50 rounded-2xl overflow-hidden border border-sand-200 card-hover reveal"
             style="transition-delay: 0.3s"
           >
@@ -1117,13 +1224,13 @@
                 </div>
                 <button
                   onclick="selectPackage('vip')"
-                  class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+                  class="bg-gray-900 bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
                 >
                   Book Now
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -1142,7 +1249,9 @@
             Capture the Magic
           </h2>
           <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-            Glimpses of extraordinary moments from our desert adventures.
+            Immerse yourself in epic moments of the Dubai Desert, thrilling
+            adventures, golden sunsets, authentic Bedouin culture, and endless
+            sandy wonders.
           </p>
         </div>
 
@@ -1150,7 +1259,7 @@
           <div class="space-y-4">
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/1.jpg"
                 alt="Desert"
                 class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1158,7 +1267,7 @@
             </div>
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1547234935-80c7142ee969?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/2.jpg"
                 alt="Sunset"
                 class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1168,7 +1277,7 @@
           <div class="space-y-4">
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/3.jpg"
                 alt="Camp"
                 class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1176,7 +1285,7 @@
             </div>
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/4.jpg"
                 alt="Dunes"
                 class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1186,7 +1295,7 @@
           <div class="space-y-4">
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/5.jpg"
                 alt="Camel"
                 class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1194,7 +1303,7 @@
             </div>
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/6.jpg"
                 alt="Adventure"
                 class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1204,7 +1313,7 @@
           <div class="space-y-4">
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/7.jpg"
                 alt="Landscape"
                 class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1212,7 +1321,7 @@
             </div>
             <div class="overflow-hidden rounded-xl reveal">
               <img
-                src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=400&q=80"
+                src="./assets/gallery/8.jpg"
                 alt="Night"
                 class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src)"
@@ -1224,7 +1333,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 md:py-32 bg-white">
+    <!-- <section id="testimonials" class="py-20 md:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
           <span
@@ -1242,7 +1351,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- Testimonial 1 -->
+   
           <div class="bg-sand-50 p-8 rounded-2xl reveal">
             <div class="flex text-yellow-400 mb-4">★★★★★</div>
             <p class="text-gray-700 mb-6 italic">
@@ -1263,7 +1372,7 @@
             </div>
           </div>
 
-          <!-- Testimonial 2 -->
+         
           <div
             class="bg-sand-50 p-8 rounded-2xl reveal"
             style="transition-delay: 0.1s"
@@ -1287,7 +1396,7 @@
             </div>
           </div>
 
-          <!-- Testimonial 3 -->
+          
           <div
             class="bg-sand-50 p-8 rounded-2xl reveal"
             style="transition-delay: 0.2s"
@@ -1312,7 +1421,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-sand-50">
@@ -1464,33 +1573,75 @@
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
+      <div
+        class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal flex flex-col items-center"
+      >
         <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">
           Ready for Your Desert Adventure?
         </h2>
         <p class="text-xl text-gray-300 mb-8">
-          Book now and get 15% off on all packages. Limited time offer for early
-          birds!
+          Book now and start your unforgettable desert journey.
         </p>
-        <div
+        <!-- <div
           class="flex items-center justify-center gap-2 mb-8 text-yellow-400"
         >
           <span>⭐</span>
           <span class="font-semibold"
             >4.9/5 rating from 10,000+ happy travelers</span
           >
-        </div>
+        </div> -->
+
         <a
           href="#book"
-          class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
+          class="max-w-[200px] glass-effect bg-[#25D366] text-white px-8 py-3 rounded-full font-bold text-lg transition-all hover:bg-white/20 flex items-center gap-2"
         >
-          Book Now - 15% Off
+          <!-- <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg> -->
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="WhatsApp"
+            role="img"
+            viewBox="0 0 512 512"
+            class="w-[36px]"
+          >
+            <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
+            <path
+              fill="#25d366"
+              stroke="#ffffff"
+              stroke-width="26"
+              d="M123 393l14-65a138 138 0 1150 47z"
+            />
+            <path
+              fill="#ffffff"
+              d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+              `
+            />
+          </svg>
+          Book Now
         </a>
       </div>
     </section>
 
     <!-- Booking Section -->
-    <section id="book" class="py-20 md:py-32 bg-white">
+    <!-- <section id="book" class="py-20 md:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-16">
           <div class="reveal">
@@ -1556,7 +1707,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-gray-900">Email Us</h4>
-                  <p class="text-gray-600">bookings@desertdreambooker.com</p>
+                  <p class="text-gray-600">bookings@explorewhitedesert.com</p>
                 </div>
               </div>
 
@@ -1714,7 +1865,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
@@ -1731,7 +1882,7 @@
                   d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
                 />
               </svg>
-              <span class="text-xl font-bold">Desert Dream Booker</span>
+              <span class="text-xl font-bold">Explore White Desert</span>
             </div>
             <p class="text-gray-400 text-sm">
               Crafting extraordinary desert experiences since 2010. Your
@@ -1774,7 +1925,7 @@
             <ul class="space-y-2 text-gray-400 text-sm">
               <li>Dubai, United Arab Emirates</li>
               <li>+971 4 123 4567</li>
-              <li>bookings@desertdreambooker.com</li>
+              <li>bookings@explorewhitedesert.com</li>
             </ul>
           </div>
 
@@ -1809,7 +1960,7 @@
           class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p class="text-gray-400 text-sm">
-            &copy; 2024 Desert Dream Booker. All rights reserved.
+            &copy; 2026 Explore White Desert. All rights reserved.
           </p>
           <div class="flex gap-6 text-sm text-gray-400">
             <a href="#" class="hover:text-white transition-colors"
@@ -1888,7 +2039,7 @@
           Booking Request Received!
         </h3>
         <p class="text-gray-600 mb-6">
-          Thank you for choosing Desert Dream Booker. Our team will contact you
+          Thank you for choosing Explore White Desert. Our team will contact you
           within 2 hours to confirm your reservation.
         </p>
         <button
