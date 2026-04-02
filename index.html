@@ -86,17 +86,100 @@
         transform: translateY(-10px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }
+      .nav-link {
+        color: #ffffff;
+      }
+      .nav-link:hover {
+        color: #facc15;
+      }
+      .nav-toggle {
+        color: #ffffff;
+      }
       .nav-scrolled {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
-        /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
       }
-      .nav-scrolled a {
+      .nav-scrolled .nav-link {
+        color: #1a1a1a !important;
+      }
+      .nav-scrolled .nav-link:hover {
+        color: #c28a45 !important;
+      }
+      .nav-scrolled .nav-toggle {
         color: #1a1a1a !important;
       }
       .nav-scrolled .logo-text {
         color: #1a1a1a !important;
+      }
+      @media (max-height: 720px) {
+        #navbar {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+        .hero-shell {
+          padding-top: 6.5rem !important;
+          max-width: 60rem;
+        }
+        .hero-badge {
+          margin-bottom: 1.85rem !important;
+          padding: 0.5rem 1rem !important;
+        }
+        .hero-title {
+          font-size: clamp(3rem, 5.5vw, 5rem) !important;
+          line-height: 0.95 !important;
+          margin-bottom: 1rem !important;
+        }
+        .hero-copy {
+          font-size: clamp(1rem, 1.8vw, 1.55rem) !important;
+          line-height: 1.35 !important;
+          margin-bottom: 1.5rem !important;
+          max-width: 48rem;
+        }
+        .hero-actions {
+          gap: 0.9rem !important;
+        }
+        .hero-btn {
+          font-size: 1rem !important;
+          padding: 0.9rem 1.6rem !important;
+        }
+        .hero-whatsapp-icon {
+          width: 1.75rem !important;
+        }
+        .hero-stats {
+          margin-top: 1.75rem !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 1rem !important;
+          max-width: 42rem;
+        }
+        .hero-stat-value {
+          font-size: 1.5rem !important;
+        }
+        .hero-stat-label {
+          font-size: 0.72rem !important;
+        }
+        .hero-scroll-indicator {
+          display: none;
+        }
+      }
+      @media (max-height: 640px) {
+        .hero-shell {
+          padding-top: 6rem !important;
+        }
+        .hero-title {
+          font-size: clamp(2.6rem, 4.8vw, 4.35rem) !important;
+        }
+        .hero-copy {
+          font-size: 1rem !important;
+          margin-bottom: 1.2rem !important;
+        }
+        .hero-btn {
+          font-size: 0.95rem !important;
+          padding: 0.8rem 1.35rem !important;
+        }
+        .hero-stats {
+          margin-top: 1.25rem !important;
+        }
       }
       .parallax {
         background-attachment: fixed;
@@ -116,13 +199,14 @@
     </style>
   </head>
 
-  <a
-    href="https://wa.me/+971525967576"
-    target="_blank"
-    aria-label="Chat on WhatsApp"
-    class="text-white fixed bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform z-50"
-  >
-    <!-- <svg
+  <body class="font-sans text-gray-800 bg-sand-50 antialiased">
+    <a
+      href="https://wa.me/message/KATO2OKZTRBEM1"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+      class="text-white fixed bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform z-50"
+    >
+      <!-- <svg
               class="w-5 h-5"
               fill="none"
               stroke="currentColor"
@@ -141,30 +225,26 @@
                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg> -->
-    <?xml version="1.0" encoding="utf-8"?>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="WhatsApp"
-      role="img"
-      viewBox="0 0 512 512"
-      class="w-[36px]"
-    >
-      <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
-      <path
-        fill="#25d366"
-        stroke="#ffffff"
-        stroke-width="26"
-        d="M123 393l14-65a138 138 0 1150 47z"
-      />
-      <path
-        fill="#ffffff"
-        d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
-        `
-      />
-    </svg>
-  </a>
-
-  <body class="font-sans text-gray-800 bg-sand-50 antialiased">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="WhatsApp"
+        role="img"
+        viewBox="0 0 512 512"
+        class="w-[36px]"
+      >
+        <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
+        <path
+          fill="#25d366"
+          stroke="#ffffff"
+          stroke-width="26"
+          d="M123 393l14-65a138 138 0 1150 47z"
+        />
+        <path
+          fill="#ffffff"
+          d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+        />
+      </svg>
+    </a>
     <!-- Navigation -->
     <nav
       id="navbar"
@@ -187,38 +267,30 @@
               ><img
                 src="./assets/explorewhitedesert-logo.png"
                 alt="White Desert Logo"
-                class="h-16 w-auto"
+                class="h-10 sm:h-12 md:h-16 w-auto"
             /></span>
           </div>
 
           <div class="hidden md:flex items-center space-x-8">
-            <a
-              href="#about"
-              class="text-white hover:text-yellow-400 transition-colors font-medium"
+            <a href="#about" class="nav-link transition-colors font-medium"
               >About</a
             >
-            <a
-              href="#packages"
-              class="text-white hover:text-yellow-400 transition-colors font-medium"
+            <a href="#packages" class="nav-link transition-colors font-medium"
               >Packages</a
             >
-            <a
-              href="#gallery"
-              class="text-white hover:text-yellow-400 transition-colors font-medium"
+            <a href="#gallery" class="nav-link transition-colors font-medium"
               >Gallery</a
             >
             <!-- <a
               href="#testimonials"
-              class="text-white hover:text-yellow-400 transition-colors font-medium"
+              class="nav-link transition-colors font-medium"
               >Testimonials</a
             > -->
-            <a
-              href="#faq"
-              class="text-white hover:text-yellow-400 transition-colors font-medium"
+            <a href="#faq" class="nav-link transition-colors font-medium"
               >FAQ</a
             >
             <a
-              href="https://wa.me/+971525967576"
+              href="https://wa.me/message/KATO2OKZTRBEM1"
               target="_blank"
               class="text-white bg-[#25D366] hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
               >Book Now</a
@@ -227,10 +299,10 @@
 
           <button
             id="mobile-menu-btn"
-            class="md:hidden text-4xl text-yellow-500"
+            class="nav-toggle md:hidden text-3xl transition-colors"
           >
             <svg
-              class="w-10 h-10"
+              class="w-8 h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -268,9 +340,9 @@
             >Gallery</a
           >
           <a
-            href="#testimonials"
+            href="tel:+971525967576"
             class="block px-3 py-2 text-gray-800 hover:bg-sand-100 rounded-md"
-            >Testimonials</a
+            >Call Us</a
           >
           <a
             href="#faq"
@@ -278,7 +350,8 @@
             >FAQ</a
           >
           <a
-            href="#book"
+            href="https://wa.me/message/KATO2OKZTRBEM1"
+            target="_blank"
             class="block px-3 py-2 bg-yellow-500 text-white rounded-md text-center font-semibold mt-4"
             >Book Now</a
           >
@@ -312,18 +385,22 @@
       </div>
 
       <!-- Content -->
-      <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div
+        class="hero-shell relative z-10 text-center px-4 max-w-5xl mx-auto pt-28 sm:pt-32 md:pt-28"
+      >
         <div
-          class="inline-flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-2 mb-6 border border-white/20 animate-fade-in-up mt-8 md:mt-1"
+          class="hero-badge inline-flex max-w-[92vw] items-center bg-white/10 backdrop-blur-md rounded-full px-3 sm:px-4 py-2 mb-4 md:mb-6 border border-white/20 animate-fade-in-up"
         >
-          <span class="text-yellow-400 mr-2">🌟</span>
-          <span class="text-white font-medium text-sm tracking-wider uppercase">
+          <span class="text-yellow-400 mr-2" aria-hidden="true">✦</span>
+          <span
+            class="text-white font-medium text-[10px] sm:text-sm tracking-[0.18em] uppercase"
+          >
             Authentic Desert Experiences in Dubai</span
           >
         </div>
 
         <h1
-          class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight animate-fade-in-up"
+          class="hero-title font-serif text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in-up"
           style="animation-delay: 0.1s"
         >
           Explore the <span class="text-gradient italic">Wonders</span> of the
@@ -331,7 +408,7 @@
         </h1>
 
         <p
-          class="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto font-light animate-fade-in-up"
+          class="hero-copy text-base sm:text-lg md:text-2xl text-gray-200 mb-8 sm:mb-10 max-w-3xl mx-auto font-light animate-fade-in-up"
           style="animation-delay: 0.2s"
         >
           Experience golden dunes, ride camels, feel the thrill of desert
@@ -339,19 +416,19 @@
         </p>
 
         <div
-          class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
+          class="hero-actions flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in-up"
           style="animation-delay: 0.3s"
         >
           <a
             href="#packages"
-            class="text-white bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl"
+            class="hero-btn w-full max-w-[255px] sm:w-auto text-white bg-yellow-500 hover:bg-yellow-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl"
           >
             Explore Packages
           </a>
           <a
-            href="https://wa.me/+971525967576"
+            href="https://wa.me/message/KATO2OKZTRBEM1"
             target="_blank"
-            class="glass-effect bg-[#25D366] text-white px-8 py-3 rounded-full font-bold text-lg transition-all hover:bg-white/20 flex items-center gap-2"
+            class="hero-btn glass-effect w-full max-w-[230px] sm:w-auto bg-[#25D366] text-white px-6 sm:px-8 py-3 rounded-full font-bold text-base sm:text-lg transition-all hover:bg-white/20 flex items-center justify-center gap-2"
           >
             <!-- <svg
               class="w-5 h-5"
@@ -372,13 +449,12 @@
                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg> -->
-            <?xml version="1.0" encoding="utf-8"?>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-label="WhatsApp"
               role="img"
               viewBox="0 0 512 512"
-              class="w-[36px]"
+              class="hero-whatsapp-icon w-7 sm:w-[36px]"
             >
               <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
               <path
@@ -390,16 +466,15 @@
               <path
                 fill="#ffffff"
                 d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
-                `
               />
             </svg>
-            Book Now
+            <span class="text-white">Book Now</span>
           </a>
         </div>
 
         <!-- Stats -->
-        <!-- <div`
-          class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in-up"
+        <!-- <div
+          class="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mx-auto animate-fade-in-up px-2 sm:px-0"
           style="animation-delay: 0.4s"
         >
           <div class="text-center">
@@ -422,29 +497,47 @@
           </div>
         </div> -->
         <div
-          class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in-up"
+          class="hero-stats mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in-up"
           style="animation-delay: 0.4s"
         >
           <!-- Stat 1 -->
           <div class="text-center">
-            <div class="text-3xl font-bold text-white mb-1">Expert</div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">
+            <div
+              class="hero-stat-value text-2xl sm:text-3xl font-bold text-white mb-1"
+            >
+              Expert
+            </div>
+            <div
+              class="hero-stat-label text-gray-300 text-[11px] sm:text-sm uppercase tracking-wider"
+            >
               Local Guides
             </div>
           </div>
 
           <!-- Stat 2 -->
           <div class="text-center border-l-0 md:border-l border-white/20">
-            <div class="text-3xl font-bold text-white mb-1">100%</div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">
+            <div
+              class="hero-stat-value text-2xl sm:text-3xl font-bold text-white mb-1"
+            >
+              100%
+            </div>
+            <div
+              class="hero-stat-label text-gray-300 text-[11px] sm:text-sm uppercase tracking-wider"
+            >
               Personalized Tours
             </div>
           </div>
 
           <!-- Stat 3 -->
           <div class="text-center border-l-0 md:border-l border-white/20">
-            <div class="text-3xl font-bold text-white mb-1">Free</div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">
+            <div
+              class="hero-stat-value text-2xl sm:text-3xl font-bold text-white mb-1"
+            >
+              Free
+            </div>
+            <div
+              class="hero-stat-label text-gray-300 text-[11px] sm:text-sm uppercase tracking-wider"
+            >
               Cancellation
             </div>
           </div>
@@ -453,7 +546,7 @@
 
       <!-- Scroll Indicator -->
       <div
-        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        class="hero-scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
       >
         <svg
           class="w-6 h-6 text-white"
@@ -768,7 +861,7 @@
             Choose Your Adventure
           </h2>
           <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-            From sunrise thrills to starlit nights – find the perfect desert
+            From sunrise thrills to starlit nights, find the perfect desert
             experience.
           </p>
         </div>
@@ -875,19 +968,13 @@
                   Hotel pickup & drop-off
                 </li>
               </ul>
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-2xl font-bold text-gray-900">$89</span>
-                  <span class="text-gray-500 text-sm">/person</span>
-                </div>
-                <button
-                  onclick="selectPackage('morning')"
-                  class="bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              <div class="flex justify-end">
+                <a
+                  href="https://wa.me/message/KATO2OKZTRBEM1"
+                  target="_blank"
+                  class="inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
+                  >Book Now</a
                 >
-                  <a href="https://wa.me/+971525967576" target="_blank"
-                    >Book Now</a
-                  >
-                </button>
               </div>
             </div>
           </div>
@@ -999,19 +1086,13 @@
                   Henna painting & Shisha
                 </li>
               </ul>
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-2xl font-bold text-gray-900">$129</span>
-                  <span class="text-gray-500 text-sm">/person</span>
-                </div>
-                <button
-                  onclick="selectPackage('evening')"
-                  class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              <div class="flex justify-end">
+                <a
+                  href="https://wa.me/message/KATO2OKZTRBEM1"
+                  target="_blank"
+                  class="inline-flex items-center rounded-lg bg-yellow-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-yellow-600"
+                  >Book Now</a
                 >
-                  <a href="https://wa.me/+971525967576" target="_blank"
-                    >Book Now</a
-                  >
-                </button>
               </div>
             </div>
           </div>
@@ -1118,19 +1199,13 @@
                   Private bathroom facilities
                 </li>
               </ul>
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-2xl font-bold text-gray-900">$249</span>
-                  <span class="text-gray-500 text-sm">/person</span>
-                </div>
-                <button
-                  onclick="selectPackage('overnight')"
-                  class="bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
+              <div class="flex justify-end">
+                <a
+                  href="https://wa.me/message/KATO2OKZTRBEM1"
+                  target="_blank"
+                  class="inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
+                  >Book Now</a
                 >
-                  <a href="https://wa.me/+971525967576" target="_blank"
-                    >Book Now</a
-                  >
-                </button>
               </div>
             </div>
           </div>
@@ -1237,11 +1312,7 @@
                   Professional photo session
                 </li>
               </ul>
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-2xl font-bold text-gray-900">$499</span>
-                  <span class="text-gray-500 text-sm">/person</span>
-                </div>
+              <div class="flex justify-end">
                 <button
                   onclick="selectPackage('vip')"
                   class="bg-gray-900 bg-[#25D366] hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
@@ -1277,76 +1348,148 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="space-y-4">
-            <div class="overflow-hidden rounded-xl reveal">
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(0)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/1.jpg"
                 alt="Desert"
-                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Rolling desert dunes under warm golden light."
+                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl reveal">
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(1)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/2.jpg"
                 alt="Sunset"
-                class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="A soft desert sunset painting the horizon."
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
           </div>
           <div class="space-y-4">
-            <div class="overflow-hidden rounded-xl reveal">
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(2)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/3.jpg"
                 alt="Camp"
-                class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Traditional camp moments in the heart of the desert."
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl reveal">
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(3)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/4.jpg"
                 alt="Dunes"
-                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Sweeping dunes shaped by the desert wind."
+                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
           </div>
           <div class="space-y-4">
-            <div class="overflow-hidden rounded-xl reveal">
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(4)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/5.jpg"
                 alt="Camel"
-                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Camel rides and timeless desert traditions."
+                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl reveal">
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(5)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/6.jpg"
                 alt="Adventure"
-                class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Action-packed adventure across the open sands."
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
           </div>
           <div class="space-y-4">
-            <div class="overflow-hidden rounded-xl reveal">
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(6)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/7.jpg"
                 alt="Landscape"
-                class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="Wide-open desert landscapes with cinematic views."
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl reveal">
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
+            <button
+              type="button"
+              class="group relative w-full overflow-hidden rounded-xl reveal text-left"
+              onclick="openLightbox(7)"
+            >
               <img
+                data-gallery-item
                 src="./assets/gallery/8.jpg"
                 alt="Night"
-                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                onclick="openLightbox(this.src)"
+                data-caption="A calm desert night filled with atmosphere."
+                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
-            </div>
+              <span
+                class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-3 text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                >View Photo</span
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -1599,8 +1742,9 @@
         <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">
           Ready for Your Desert Adventure?
         </h2>
-        <p class="text-xl text-gray-300 mb-8">
-          Book now and start your unforgettable desert journey.
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Message our team on WhatsApp for availability, pickup details, and a
+          fast confirmed booking.
         </p>
         <!-- <div
           class="flex items-center justify-center gap-2 mb-8 text-yellow-400"
@@ -1612,8 +1756,9 @@
         </div> -->
 
         <a
-          href="#book"
-          class="max-w-[200px] glass-effect bg-[#25D366] text-white px-8 py-3 rounded-full font-bold text-lg transition-all hover:bg-white/20 flex items-center gap-2"
+          href="https://wa.me/message/KATO2OKZTRBEM1"
+          target="_blank"
+          class="glass-effect inline-flex min-w-[280px] items-center justify-center gap-3 whitespace-nowrap rounded-full bg-[#25D366] px-8 py-3 text-lg font-bold text-white transition-all hover:bg-white/20"
         >
           <!-- <svg
               class="w-5 h-5"
@@ -1634,13 +1779,12 @@
                 d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg> -->
-          <?xml version="1.0" encoding="utf-8"?>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-label="WhatsApp"
             role="img"
             viewBox="0 0 512 512"
-            class="w-[36px]"
+            class="w-7 flex-shrink-0"
           >
             <!-- <rect width="512" height="512" rx="15%" fill="#25d366" /> -->
             <path
@@ -1652,11 +1796,18 @@
             <path
               fill="#ffffff"
               d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
-              `
             />
           </svg>
-          Book Now
+          Chat on WhatsApp
         </a>
+        <p class="mt-4 text-sm text-gray-300">
+          Prefer to call? Reach us at
+          <a
+            href="tel:+971525967576"
+            class="font-semibold text-white hover:text-yellow-300"
+            >+971 52 596 7576</a
+          >.
+        </p>
       </div>
     </section>
 
@@ -1824,12 +1975,10 @@
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all"
                 >
                   <option value="">Choose your adventure...</option>
-                  <option value="morning">Morning Safari - $89/person</option>
-                  <option value="evening">Evening Safari - $129/person</option>
-                  <option value="overnight">
-                    Overnight Safari - $249/person
-                  </option>
-                  <option value="vip">VIP Experience - $499/person</option>
+                  <option value="morning">Morning Safari</option>
+                  <option value="evening">Evening Safari</option>
+                  <option value="overnight">Overnight Safari</option>
+                  <option value="vip">VIP Experience</option>
                 </select>
               </div>
 
@@ -1888,11 +2037,17 @@
     </section> -->
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <footer
+      class="bg-gray-900 text-white py-10 sm:py-12 border-t border-gray-800"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div
+          class="grid gap-8 sm:gap-10 md:grid-cols-4 mb-8 text-center md:text-left"
+        >
           <div>
-            <div class="flex items-center gap-2 mb-4">
+            <div
+              class="flex items-center justify-center md:justify-start gap-2 mb-4"
+            >
               <!-- footer logo -->
               <!-- <svg
                 class="w-8 h-8 text-yellow-500"
@@ -1909,17 +2064,19 @@
                 ><img
                   src="./assets/explorewhitedesert-logo.png"
                   alt="White Desert Logo"
-                  class="h-[5rem] w-auto"
+                  class="h-14 sm:h-16 md:h-[5rem] w-auto"
               /></span>
             </div>
-            <p class="text-gray-400 text-sm">
+            <p class="text-gray-400 text-sm max-w-xs mx-auto md:mx-0">
               Crafting extraordinary desert experiences. Your adventure begins
               here.
             </p>
           </div>
 
           <div>
-            <h4 class="font-bold mb-4">Quick Links</h4>
+            <h4 class="font-bold text-base sm:text-lg mb-3 sm:mb-4">
+              Quick Links
+            </h4>
             <ul class="space-y-2 text-gray-400 text-sm">
               <li>
                 <a href="#about" class="hover:text-yellow-400 transition-colors"
@@ -1949,60 +2106,50 @@
           </div>
 
           <div>
-            <h4 class="font-bold mb-4">Contact</h4>
+            <h4 class="font-bold text-base sm:text-lg mb-3 sm:mb-4">Contact</h4>
             <ul class="space-y-2 text-gray-400 text-sm">
               <li>Dubai, United Arab Emirates</li>
               <li>
                 <a href="tel:+971525967576">+971 52 596 7576</a>
               </li>
-              <li>bookings@explorewhitedesert.com</li>
+              <li>
+                <a href="mailto:bookings@explorewhitedesert.com"
+                  >bookings@explorewhitedesert.com</a
+                >
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 class="font-bold mb-4">Follow Us</h4>
-            <div class="flex gap-4">
+            <h4 class="font-bold text-base sm:text-lg mb-3 sm:mb-4">
+              Quick Contact
+            </h4>
+            <div class="flex flex-col items-center gap-3 md:items-start">
               <a
-                href="#"
-                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
+                href="https://wa.me/message/KATO2OKZTRBEM1"
+                target="_blank"
+                class="inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#1fb85a]"
+                >WhatsApp Booking</a
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                  />
-                </svg>
-              </a>
               <a
-                href="#"
-                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-500 transition-colors"
+                href="tel:+971525967576"
+                class="inline-flex items-center justify-center rounded-full border border-gray-700 px-5 py-2 text-sm font-semibold text-white transition-colors hover:border-yellow-400 hover:text-yellow-300"
+                >Call Now</a
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  />
-                </svg>
-              </a>
             </div>
           </div>
         </div>
 
         <div
-          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+          class="border-t border-gray-800 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-center md:text-left"
         >
           <p class="text-gray-400 text-sm">
             &copy; 2026 Explore White Desert. All rights reserved.
           </p>
-          <div class="flex gap-6 text-sm text-gray-400">
-            <a href="#" class="hover:text-white transition-colors"
-              >Privacy Policy</a
-            >
-            <a href="#" class="hover:text-white transition-colors"
-              >Terms of Service</a
-            >
-            <a href="#" class="hover:text-white transition-colors"
-              >Cookie Policy</a
-            >
-          </div>
+          <p class="text-sm text-gray-400">
+            Fast WhatsApp booking, flexible pickup, and support when you need
+            it.
+          </p>
         </div>
       </div>
     </footer>
@@ -2013,30 +2160,93 @@
       class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center p-4"
       onclick="closeLightbox()"
     >
-      <img
-        id="lightbox-img"
-        src=""
-        alt="Full size"
-        class="max-w-full max-h-full rounded-lg shadow-2xl"
-      />
-      <button
-        class="absolute top-4 right-4 text-white hover:text-yellow-400 transition-colors"
-        onclick="closeLightbox()"
-      >
-        <svg
-          class="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+      <div class="relative w-full max-w-6xl" onclick="event.stopPropagation()">
+        <div
+          class="absolute left-0 right-0 top-0 z-10 flex items-center justify-between px-3 md:px-6 py-4"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
+          <div
+            id="lightbox-counter"
+            class="rounded-full bg-black/45 px-4 py-2 text-sm font-semibold tracking-wide text-white backdrop-blur-sm"
+          ></div>
+          <button
+            class="rounded-full bg-black/45 p-2 text-white transition-colors hover:text-yellow-400"
+            onclick="closeLightbox()"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="relative flex items-center justify-center">
+          <button
+            type="button"
+            class="absolute left-2 md:left-4 z-10 rounded-full bg-black/45 p-3 text-white transition-colors hover:text-yellow-400"
+            onclick="changeLightboxImage(-1)"
+          >
+            <svg
+              class="h-7 w-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <img
+            id="lightbox-img"
+            src=""
+            alt="Full size"
+            class="max-h-[78vh] w-full rounded-2xl object-contain shadow-2xl"
           />
-        </svg>
-      </button>
+
+          <button
+            type="button"
+            class="absolute right-2 md:right-4 z-10 rounded-full bg-black/45 p-3 text-white transition-colors hover:text-yellow-400"
+            onclick="changeLightboxImage(1)"
+          >
+            <svg
+              class="h-7 w-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mt-4 text-center">
+          <p
+            id="lightbox-caption"
+            class="text-base md:text-lg font-medium text-white"
+          ></p>
+          <p class="mt-2 text-sm text-gray-300">
+            Use arrow keys or buttons to browse the gallery.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Success Modal -->
@@ -2149,12 +2359,40 @@
       }
 
       // Lightbox functions
-      function openLightbox(src) {
+      const galleryItems = Array.from(
+        document.querySelectorAll("[data-gallery-item]"),
+      );
+      let currentGalleryIndex = 0;
+
+      function updateLightbox() {
         const lightbox = document.getElementById("lightbox");
         const img = document.getElementById("lightbox-img");
-        img.src = src;
+        const counter = document.getElementById("lightbox-counter");
+        const caption = document.getElementById("lightbox-caption");
+        const activeItem = galleryItems[currentGalleryIndex];
+
+        if (!activeItem) return;
+
+        img.src = activeItem.src;
+        img.alt = activeItem.alt;
+        counter.textContent = `${currentGalleryIndex + 1} / ${galleryItems.length}`;
+        caption.textContent = activeItem.dataset.caption || activeItem.alt;
+        lightbox.classList.remove("hidden");
+      }
+
+      function openLightbox(index) {
+        currentGalleryIndex = index;
+        updateLightbox();
+        const lightbox = document.getElementById("lightbox");
         lightbox.classList.remove("hidden");
         document.body.style.overflow = "hidden";
+      }
+
+      function changeLightboxImage(direction) {
+        currentGalleryIndex =
+          (currentGalleryIndex + direction + galleryItems.length) %
+          galleryItems.length;
+        updateLightbox();
       }
 
       function closeLightbox() {
@@ -2162,6 +2400,24 @@
         lightbox.classList.add("hidden");
         document.body.style.overflow = "auto";
       }
+
+      document.addEventListener("keydown", function (event) {
+        const lightbox = document.getElementById("lightbox");
+
+        if (lightbox.classList.contains("hidden")) return;
+
+        if (event.key === "Escape") {
+          closeLightbox();
+        }
+
+        if (event.key === "ArrowRight") {
+          changeLightboxImage(1);
+        }
+
+        if (event.key === "ArrowLeft") {
+          changeLightboxImage(-1);
+        }
+      });
 
       // Package selection
       function selectPackage(packageType) {
